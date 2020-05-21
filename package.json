@@ -1,0 +1,101 @@
+{
+  "_from": "@feathersjs/client@^4.5.4",
+  "_id": "@feathersjs/client@4.5.4",
+  "_inBundle": false,
+  "_integrity": "sha512-KufnhuD81JSwqDJyB8k8fZTINppdhUKAwIboFclMVCFBM3iZlyhO6RimTu89ZJ1tLxWpayqs6fnXQRgwls8+bg==",
+  "_location": "/@feathersjs/client",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@feathersjs/client@^4.5.4",
+    "name": "@feathersjs/client",
+    "escapedName": "@feathersjs%2fclient",
+    "scope": "@feathersjs",
+    "rawSpec": "^4.5.4",
+    "saveSpec": null,
+    "fetchSpec": "^4.5.4"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@feathersjs/client/-/client-4.5.4.tgz",
+  "_shasum": "274aeb86583711dfb58824c288d99eb561396a45",
+  "_spec": "@feathersjs/client@^4.5.4",
+  "_where": "/Users/nurlan/Projects/academy/frontend",
+  "author": {
+    "name": "Feathers contributors"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 10"
+  ],
+  "bugs": {
+    "url": "https://github.com/feathersjs/feathers/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A module that consolidates Feathers client modules for REST (jQuery, Request, Superagent) and Websocket (Socket.io, Primus) connections",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@feathersjs/authentication-client": "^4.5.4",
+    "@feathersjs/errors": "^4.5.3",
+    "@feathersjs/express": "^4.5.4",
+    "@feathersjs/feathers": "^4.5.3",
+    "@feathersjs/primus": "^4.5.4",
+    "@feathersjs/primus-client": "^4.5.4",
+    "@feathersjs/rest-client": "^4.5.4",
+    "@feathersjs/socketio": "^4.5.4",
+    "@feathersjs/socketio-client": "^4.5.4",
+    "@feathersjs/tests": "^4.5.3",
+    "babel-loader": "^8.1.0",
+    "body-parser": "^1.19.0",
+    "feathers-memory": "^4.1.0",
+    "jquery": "^3.5.0",
+    "jsdom": "^16.2.2",
+    "mocha": "^7.1.1",
+    "mocha-puppeteer": "^0.14.0",
+    "node-fetch": "^2.6.0",
+    "parallel-webpack": "^2.6.0",
+    "request": "^2.88.2",
+    "socket.io-client": "^2.3.0",
+    "superagent": "^5.2.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.42.1",
+    "webpack-merge": "^4.2.2",
+    "ws": "^7.2.3",
+    "xhr2": "^0.2.0"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/feathers"
+  },
+  "gitHead": "3f967d6118bb813bdb45aa69965a4ac16e0a36b3",
+  "homepage": "https://github.com/feathersjs/client",
+  "keywords": [
+    "feathers",
+    "feathers-plugin"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@feathersjs/client",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feathersjs/feathers.git"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run webpack",
+    "clean": "../../node_modules/.bin/shx rm -rf dist/ && ../../node_modules/.bin/shx mkdir -p dist",
+    "mocha": "mocha --config ../../.mocharc.json",
+    "test": "npm run build && npm run mocha",
+    "test:browser": "mocha-puppeteer browser/test.js",
+    "version": "npm run build",
+    "webpack": "parallel-webpack"
+  },
+  "types": "index.d.ts",
+  "version": "4.5.4"
+}

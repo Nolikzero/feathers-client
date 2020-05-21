@@ -1,0 +1,1 @@
+$_mod.run("/marko$4.18.42/src/runtime/components/boot");

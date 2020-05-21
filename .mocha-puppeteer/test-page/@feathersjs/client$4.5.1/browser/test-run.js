@@ -1,0 +1,1 @@
+$_mod.run("/@feathersjs/client$4.5.1/browser/test");
